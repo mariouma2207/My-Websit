@@ -4,71 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Social Media Links</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 100vh;
-      margin: 0;
-      background-color: #f4f4f4;
-      font-family: Arial, sans-serif;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.2rem;
-      color: gray;
-      margin-bottom: 20px;
-    }
-
-    .circle-image {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid #000;
-      margin-bottom: 20px;
-    }
-
-    .social-links {
-      display: flex;
-      gap: 20px;
-    }
-
-    .social-links a {
-      width: 50px;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #c4bba8;
-      border-radius: 50%;
-      text-decoration: none;
-      color: white;
-      font-size: 24px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    .social-links a:hover {
-      background-color: #a39b8b;
-      transform: scale(1.1);
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 50, density: { enable: true, value_area: 800 } },
+        color: { value: '#ff5f99' },
+        shape: { type: 'circle', stroke: { width: 0, color: '#fff' } },
+        opacity: { value: 0.5, random: true, anim: { enable: true, speed: 1, opacity_min: 0 } },
+        size: { value: 5, random: true, anim: { enable: true, speed: 40, size_min: 0.1 } },
+        line_linked: { enable: true, distance: 150, color: '#ffffff', opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 3, direction: 'random', random: true, straight: false, out_mode: 'out', bounce: false }
+      },
+      interactivity: {
+        detect_on: 'window',
+        events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' } },
+        modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+      },
+      retina_detect: true
+    });
+  </script>
 </head>
 <body>
+  <div id="particles-js"></div>
   <h1>Mariem Abdelkrim</h1>
   <p>Coding student</p>
-  <img src="https://i.pinimg.com/736x/2f/37/46/2f37465abbac9921c27fc61a55ab93ad.jpg" alt="Profile Picture" class="circle-image">
+  <img src="https://i.pinimg.com/736x/2f/37/46/2f37465abbac9921c27fc61a55ab93ad.jpg" alt="Mariem Abdelkrim's Profile Picture" class="circle-image">
   <div class="social-links">
-    <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
     <a href="https://www.instagram.com/notmariemsrry/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <p>My instagram</p>
   </div>
 </body>
 </html>
+
